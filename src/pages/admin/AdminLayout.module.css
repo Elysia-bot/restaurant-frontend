@@ -1,0 +1,17 @@
+.layout { display: flex; min-height: 100vh; background: var(--admin-bg); font-family: 'DM Sans', sans-serif; }
+.sidebar { width: 220px; background: #111827; color: white; display: flex; flex-direction: column; padding: 0; position: fixed; left: 0; top: 0; bottom: 0; z-index: 10; }
+.sideHeader { display: flex; align-items: center; gap: 12px; padding: 20px 16px; border-bottom: 1px solid #1F2937; }
+.sideIcon { font-size: 1.8rem; }
+.sideBrand { font-size: .75rem; font-weight: 700; color: #6B7280; letter-spacing: .1em; text-transform: uppercase; }
+.sideName { font-size: .95rem; font-weight: 600; color: #F9FAFB; }
+.nav { flex: 1; padding: 12px 8px; display: flex; flex-direction: column; gap: 2px; }
+.navItem { display: flex; align-items: center; gap: 10px; padding: 11px 12px; border-radius: 8px; border: none; background: transparent; color: #9CA3AF; cursor: pointer; transition: all .15s; width: 100%; font-family: 'DM Sans', sans-serif; font-size: .92rem; font-weight: 500; text-align: left; }
+.navItem:hover { background: #1F2937; color: #F9FAFB; }
+.navActive { background: #1D4ED8 !important; color: white !important; }
+.navIcon { font-size: 1.1rem; flex-shrink: 0; }
+.navLabel { flex: 1; }
+.liveTag { background: #EF4444; color: white; font-size: .6rem; font-weight: 700; padding: 2px 6px; border-radius: 99px; letter-spacing: .05em; animation: pulse 2s ease infinite; }
+.msgAlert { margin: 0 8px; padding: 10px 12px; background: #1F2937; border: 1px solid #374151; border-radius: 8px; font-size: .82rem; color: #FCD34D; }
+.logoutBtn { margin: 12px 8px; padding: 10px 12px; border-radius: 8px; border: 1px solid #374151; background: transparent; color: #6B7280; cursor: pointer; font-family: 'DM Sans', sans-serif; font-size: .88rem; text-align: left; transition: all .15s; }
+.logoutBtn:hover { background: #1F2937; color: #F87171; }
+.main { margin-left: 220px; flex: 1; padding: 0; }

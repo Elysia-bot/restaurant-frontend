@@ -1,0 +1,29 @@
+.page { min-height: 100vh; background: var(--cream); }
+.loading { display: flex; justify-content: center; align-items: center; height: 60vh; }
+.spinner { width: 36px; height: 36px; border-radius: 50%; border: 3px solid var(--cream-dark); border-top-color: var(--terracotta); animation: spin 1s linear infinite; }
+.back {
+  position: absolute; top: 16px; left: 96px; z-index: 5;
+  background: rgba(255,255,255,.9); border: none; border-radius: 99px;
+  padding: 8px 16px; font-size: .85rem; font-weight: 500; cursor: pointer;
+  box-shadow: var(--shadow-sm); backdrop-filter: blur(8px);
+  transition: all .2s;
+}
+.back:hover { background: white; transform: translateX(-2px); }
+.hero { position: relative; height: 280px; overflow: hidden; }
+.heroImg { width: 100%; height: 100%; object-fit: cover; }
+.heroPlaceholder { width: 100%; height: 100%; background: var(--cream-dark); display: flex; align-items: center; justify-content: center; font-size: 6rem; }
+.heroOverlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,20,16,.3), transparent 50%); }
+.heroContent { position: absolute; top: 16px; right: 16px; display: flex; gap: 8px; }
+.itemId { background: rgba(26,20,16,.7); color: white; font-family: 'Space Mono', monospace; font-size: .75rem; padding: 4px 10px; border-radius: 99px; }
+.catTag { background: rgba(255,255,255,.9); color: var(--ink-soft); font-size: .75rem; font-weight: 600; padding: 4px 10px; border-radius: 99px; }
+.content { padding: 24px; }
+.name { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+.price { font-size: 1.4rem; font-weight: 700; color: var(--terracotta); margin-bottom: 16px; }
+.desc { font-size: .95rem; color: var(--ink-soft); line-height: 1.7; margin-bottom: 32px; }
+.actions { display: flex; gap: 16px; align-items: center; }
+.qtyControl { display: flex; align-items: center; gap: 12px; background: var(--white); border-radius: 99px; padding: 8px 16px; box-shadow: var(--shadow-sm); }
+.qtyControl button { width: 32px; height: 32px; border-radius: 50%; border: 1.5px solid var(--cream-dark); background: var(--cream); cursor: pointer; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; transition: all .15s; }
+.qtyControl button:hover { border-color: var(--terracotta); color: var(--terracotta); }
+.qtyControl span { font-size: 1.1rem; font-weight: 700; min-width: 28px; text-align: center; }
+.addBtn { flex: 1; transition: all .3s; }
+.addedAnim { background: var(--forest) !important; }

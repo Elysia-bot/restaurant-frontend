@@ -1,0 +1,15 @@
+.page { padding: 24px; font-family: 'DM Sans', sans-serif; max-width: 700px; }
+.title { font-size: 1.4rem; font-weight: 700; color: #111827; margin-bottom: 20px; }
+.avgCard { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,.06); margin-bottom: 20px; display: flex; align-items: center; gap: 20px; border-left: 4px solid #F59E0B; }
+.avgNum { font-size: 3rem; font-weight: 900; color: #111827; font-family: 'Space Mono', monospace; }
+.avgStars { font-size: 1.4rem; margin-bottom: 4px; }
+.avgLabel { font-size: .85rem; color: #6B7280; }
+.list { display: flex; flex-direction: column; gap: 10px; }
+.empty { color: #9CA3AF; text-align: center; padding: 40px; }
+.card { background: white; border-radius: 10px; padding: 16px 18px; box-shadow: 0 1px 4px rgba(0,0,0,.06); animation: fadeUp .3s ease; }
+.cardTop { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.cardTop > div { display: flex; align-items: center; gap: 10px; }
+.tableTag { background: #EFF6FF; color: #1D4ED8; padding: 3px 10px; border-radius: 99px; font-size: .78rem; font-weight: 700; }
+.starsDisplay { font-size: 1rem; }
+.time { font-size: .78rem; color: #9CA3AF; }
+.comment { font-size: .9rem; color: #374151; line-height: 1.6; background: #F9FAFB; padding: 10px; border-radius: 8px; }

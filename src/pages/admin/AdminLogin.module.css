@@ -1,0 +1,14 @@
+.page { min-height: 100vh; background: #111827; display: flex; align-items: center; justify-content: center; font-family: 'DM Sans', sans-serif; }
+.card { background: #1F2937; border-radius: 16px; padding: 40px 36px; width: min(380px, 90vw); box-shadow: 0 20px 48px rgba(0,0,0,.5); }
+.logoArea { text-align: center; margin-bottom: 32px; }
+.logo { font-size: 3rem; display: block; margin-bottom: 12px; }
+.brand { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: #F9FAFB; margin-bottom: 4px; }
+.role { color: #6B7280; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; }
+.field { margin-bottom: 16px; }
+.field label { display: block; font-size: .82rem; font-weight: 600; color: #9CA3AF; margin-bottom: 6px; letter-spacing: .04em; text-transform: uppercase; }
+.field input { width: 100%; background: #374151; border: 1.5px solid #4B5563; border-radius: 8px; padding: 11px 14px; color: #F9FAFB; font-family: 'DM Sans', sans-serif; font-size: .95rem; outline: none; transition: border-color .2s; }
+.field input:focus { border-color: #2563EB; }
+.error { color: #F87171; font-size: .85rem; margin-bottom: 12px; text-align: center; }
+.btn { width: 100%; margin-top: 8px; padding: 13px; background: #2563EB; color: white; border: none; border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all .2s; }
+.btn:hover:not(:disabled) { background: #1D4ED8; }
+.btn:disabled { opacity: .6; cursor: not-allowed; }

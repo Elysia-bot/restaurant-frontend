@@ -1,0 +1,27 @@
+.page { padding: 24px; font-family: 'DM Sans', sans-serif; max-width: 900px; }
+.title { font-size: 1.4rem; font-weight: 700; color: #111827; margin-bottom: 20px; }
+.filterCard { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.06); margin-bottom: 20px; }
+.filterRow { display: flex; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+.filterField { display: flex; flex-direction: column; gap: 5px; }
+.filterField label { font-size: .78rem; font-weight: 600; color: #6B7280; text-transform: uppercase; letter-spacing: .04em; }
+.filterField input { border: 1.5px solid #E5E7EB; border-radius: 8px; padding: 9px 12px; font-family: 'DM Sans', sans-serif; font-size: .9rem; outline: none; }
+.filterField input:focus { border-color: #2563EB; }
+.searchBtn { padding: 9px 20px; background: #2563EB; color: white; border: none; border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: .9rem; font-weight: 600; cursor: pointer; }
+.kpiRow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px; }
+.kpiCard { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.06); border-top: 4px solid; }
+.kpiLabel { font-size: .82rem; color: #6B7280; font-weight: 500; margin-bottom: 8px; }
+.kpiValue { font-size: 1.8rem; font-weight: 800; color: #111827; font-family: 'Space Mono', monospace; }
+.topCard { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.subTitle { font-size: 1rem; font-weight: 700; color: #111827; margin-bottom: 16px; }
+.empty { color: #9CA3AF; font-size: .9rem; }
+.topList { display: flex; flex-direction: column; gap: 10px; }
+.topRow { display: flex; align-items: center; gap: 12px; }
+.rank { width: 28px; height: 28px; border-radius: 50%; background: #F3F4F6; color: #374151; font-size: .78rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.topRow:first-child .rank { background: #FEF3C7; color: #92400E; }
+.topRow:nth-child(2) .rank { background: #F3F4F6; color: #374151; }
+.topRow:nth-child(3) .rank { background: #FEF9C3; color: #713F12; }
+.topName { width: 160px; font-size: .9rem; font-weight: 600; color: #111827; flex-shrink: 0; }
+.barWrap { flex: 1; height: 8px; background: #F3F4F6; border-radius: 99px; overflow: hidden; }
+.bar { height: 100%; background: #2563EB; border-radius: 99px; transition: width .5s ease; }
+.topSold { width: 70px; text-align: right; font-size: .82rem; color: #6B7280; font-weight: 600; flex-shrink: 0; }
+@media (max-width: 600px) { .kpiRow { grid-template-columns: 1fr; } }
