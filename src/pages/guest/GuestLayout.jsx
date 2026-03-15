@@ -37,9 +37,9 @@ export default function GuestLayout() {
   // WebSocket for realtime order status
   useEffect(() => {
     const client = new Client({
-      webSocketFactory: () => new WebSocket(
-        `ws://${window.location.hostname}:8080/ws/websocket`
-      ),
+   webSocketFactory: () => new WebSocket(
+  'wss://restaurant-backend-production-7837.up.railway.app/ws/websocket'
+),
       onConnect: () => {
         client.subscribe(`/topic/orders/${tableId}`, msg => {
           const update = JSON.parse(msg.body)

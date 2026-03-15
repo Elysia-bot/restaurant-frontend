@@ -35,9 +35,9 @@ export default function OrderBoard() {
   // WebSocket for all tables
   useEffect(() => {
     const client = new Client({
-      webSocketFactory: () => new WebSocket(
-        `ws://${window.location.hostname}:8080/ws/websocket`
-      ),
+    webSocketFactory: () => new WebSocket(
+  'wss://restaurant-backend-production-7837.up.railway.app/ws/websocket'
+),
       onConnect: () => {
         // Subscribe broadly - re-load on any update
         for (let i = 1; i <= 20; i++) {
